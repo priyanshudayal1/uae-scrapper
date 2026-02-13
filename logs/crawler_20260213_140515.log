@@ -1,0 +1,120 @@
+2026-02-13 14:05:15,027 [INFO] Running in Single-Target Mode. Report will be sent ONLY to: piyushdayal108@gmail.com
+2026-02-13 14:05:15,049 [INFO] Loaded 4928 processed URLs from scraper_state.json
+2026-02-13 14:05:15,050 [INFO] Loaded 1 processed URLs from crawler_state.json
+2026-02-13 14:05:15,357 [INFO] ======================================================================
+2026-02-13 14:05:15,357 [INFO] UAE DIFC Courts Daily Crawler – Started at 2026-02-13T14:05:15.357151
+2026-02-13 14:05:15,357 [INFO] Dry-run: False
+2026-02-13 14:05:15,358 [INFO] ======================================================================
+2026-02-13 14:05:16,019 [INFO] Browser session started.
+2026-02-13 14:05:16,020 [INFO] Fetching categories from https://www.difccourts.ae/rules-decisions/judgments-orders
+2026-02-13 14:05:24,135 [INFO]   Category: Small Claims Tribunal
+2026-02-13 14:05:24,151 [INFO]   Category: Court of First Instance
+2026-02-13 14:05:24,168 [INFO]   Category: Court of Appeal
+2026-02-13 14:05:24,186 [INFO]   Category: Arbitration
+2026-02-13 14:05:24,206 [INFO]   Category: Enforcement
+2026-02-13 14:05:24,229 [INFO]   Category: Technology and Construction Division
+2026-02-13 14:05:24,249 [INFO]   Category: Joint Judicial Committee
+2026-02-13 14:05:24,267 [INFO]   Category: Court Administrative Orders
+2026-02-13 14:05:24,289 [INFO]   Category: Digital Economy Court
+2026-02-13 14:05:24,290 [INFO] Found 9 categories to crawl.
+2026-02-13 14:05:24,290 [INFO] 
+>>> Category 1/9
+2026-02-13 14:05:24,291 [INFO] ============================================================
+2026-02-13 14:05:24,291 [INFO] Crawling category: Small Claims Tribunal
+2026-02-13 14:05:24,291 [INFO] ============================================================
+2026-02-13 14:05:26,976 [INFO]   Total pages: 63
+2026-02-13 14:05:26,976 [INFO]   Listing page 1: https://www.difccourts.ae/rules-decisions/judgments-orders/small-claims-tribunal
+2026-02-13 14:05:33,735 [INFO]     Found 12 items (layout=standard)
+2026-02-13 14:05:33,736 [INFO]   All 12 items on page 1 already processed – stopping category scan.
+2026-02-13 14:05:33,736 [INFO] Category 'Small Claims Tribunal' done.
+2026-02-13 14:05:33,736 [INFO] 
+>>> Category 2/9
+2026-02-13 14:05:33,737 [INFO] ============================================================
+2026-02-13 14:05:33,737 [INFO] Crawling category: Court of First Instance
+2026-02-13 14:05:33,737 [INFO] ============================================================
+2026-02-13 14:05:37,596 [INFO]   Total pages: 296
+2026-02-13 14:05:37,597 [INFO]   Listing page 1: https://www.difccourts.ae/rules-decisions/judgments-orders/court-first-instance
+2026-02-13 14:05:45,593 [INFO]     Found 12 items (layout=standard)
+2026-02-13 14:05:45,593 [INFO]   All 12 items on page 1 already processed – stopping category scan.
+2026-02-13 14:05:45,593 [INFO] Category 'Court of First Instance' done.
+2026-02-13 14:05:45,593 [INFO] 
+>>> Category 3/9
+2026-02-13 14:05:45,593 [INFO] ============================================================
+2026-02-13 14:05:45,594 [INFO] Crawling category: Court of Appeal
+2026-02-13 14:05:45,594 [INFO] ============================================================
+2026-02-13 14:05:47,732 [INFO]   Total pages: 20
+2026-02-13 14:05:47,733 [INFO]   Listing page 1: https://www.difccourts.ae/rules-decisions/judgments-orders/court-appeal
+2026-02-13 14:05:54,092 [INFO]     Found 12 items (layout=standard)
+2026-02-13 14:05:54,092 [INFO]   All 12 items on page 1 already processed – stopping category scan.
+2026-02-13 14:05:54,093 [INFO] Category 'Court of Appeal' done.
+2026-02-13 14:05:54,093 [INFO] 
+>>> Category 4/9
+2026-02-13 14:05:54,093 [INFO] ============================================================
+2026-02-13 14:05:54,093 [INFO] Crawling category: Arbitration
+2026-02-13 14:05:54,093 [INFO] ============================================================
+2026-02-13 14:05:56,152 [INFO]   Total pages: 10
+2026-02-13 14:05:56,153 [INFO]   Listing page 1: https://www.difccourts.ae/rules-decisions/judgments-orders/arbitration
+2026-02-13 14:06:02,396 [INFO]     Found 12 items (layout=standard)
+2026-02-13 14:06:02,397 [INFO]   All 12 items on page 1 already processed – stopping category scan.
+2026-02-13 14:06:02,397 [INFO] Category 'Arbitration' done.
+2026-02-13 14:06:02,397 [INFO] 
+>>> Category 5/9
+2026-02-13 14:06:02,397 [INFO] ============================================================
+2026-02-13 14:06:02,397 [INFO] Crawling category: Enforcement
+2026-02-13 14:06:02,397 [INFO] ============================================================
+2026-02-13 14:06:04,530 [INFO]   Total pages: 5
+2026-02-13 14:06:04,530 [INFO]   Listing page 1: https://www.difccourts.ae/rules-decisions/judgments-orders/enforcement
+2026-02-13 14:06:10,836 [INFO]     Found 12 items (layout=standard)
+2026-02-13 14:06:10,837 [INFO]   All 12 items on page 1 already processed – stopping category scan.
+2026-02-13 14:06:10,837 [INFO] Category 'Enforcement' done.
+2026-02-13 14:06:10,837 [INFO] 
+>>> Category 6/9
+2026-02-13 14:06:10,837 [INFO] ============================================================
+2026-02-13 14:06:10,837 [INFO] Crawling category: Technology and Construction Division
+2026-02-13 14:06:10,837 [INFO] ============================================================
+2026-02-13 14:06:12,949 [INFO]   Total pages: 12
+2026-02-13 14:06:12,949 [INFO]   Listing page 1: https://www.difccourts.ae/rules-decisions/judgments-orders/technology-and-construction-division
+2026-02-13 14:06:19,557 [INFO]     Found 12 items (layout=standard)
+2026-02-13 14:06:19,558 [INFO]   All 12 items on page 1 already processed – stopping category scan.
+2026-02-13 14:06:19,558 [INFO] Category 'Technology and Construction Division' done.
+2026-02-13 14:06:19,558 [INFO] 
+>>> Category 7/9
+2026-02-13 14:06:19,558 [INFO] ============================================================
+2026-02-13 14:06:19,559 [INFO] Crawling category: Joint Judicial Committee
+2026-02-13 14:06:19,559 [INFO] ============================================================
+2026-02-13 14:06:21,615 [INFO]   Total pages: 1
+2026-02-13 14:06:21,616 [INFO]   Listing page 1: https://www.difccourts.ae/rules-decisions/judgments-orders/joint-judicial-committee
+2026-02-13 14:06:59,202 [INFO]     Found 57 items (layout=grid)
+2026-02-13 14:06:59,203 [INFO]   All 57 items on page 1 already processed – stopping category scan.
+2026-02-13 14:06:59,203 [INFO] Category 'Joint Judicial Committee' done.
+2026-02-13 14:06:59,203 [INFO] 
+>>> Category 8/9
+2026-02-13 14:06:59,203 [INFO] ============================================================
+2026-02-13 14:06:59,203 [INFO] Crawling category: Court Administrative Orders
+2026-02-13 14:06:59,203 [INFO] ============================================================
+2026-02-13 14:07:01,168 [INFO]   Total pages: 3
+2026-02-13 14:07:01,168 [INFO]   Listing page 1: https://www.difccourts.ae/rules-decisions/judgments-orders/court-administrative-orders
+2026-02-13 14:07:07,541 [INFO]     Found 12 items (layout=standard)
+2026-02-13 14:07:07,542 [INFO]   All 12 items on page 1 already processed – stopping category scan.
+2026-02-13 14:07:07,542 [INFO] Category 'Court Administrative Orders' done.
+2026-02-13 14:07:07,542 [INFO] 
+>>> Category 9/9
+2026-02-13 14:07:07,542 [INFO] ============================================================
+2026-02-13 14:07:07,543 [INFO] Crawling category: Digital Economy Court
+2026-02-13 14:07:07,543 [INFO] ============================================================
+2026-02-13 14:07:09,460 [INFO]   Total pages: 1
+2026-02-13 14:07:09,460 [INFO]   Listing page 1: https://www.difccourts.ae/rules-decisions/judgments-orders/digital-economy-court
+2026-02-13 14:07:14,744 [INFO]     Found 4 items (layout=standard)
+2026-02-13 14:07:14,744 [INFO]   All 4 items on page 1 already processed – stopping category scan.
+2026-02-13 14:07:14,745 [INFO] Category 'Digital Economy Court' done.
+2026-02-13 14:07:16,758 [INFO] Synced crawler state -> scraper_state.json (4928 total URLs)
+2026-02-13 14:07:16,760 [INFO] ======================================================================
+2026-02-13 14:07:16,761 [INFO] CRAWL COMPLETE
+2026-02-13 14:07:16,761 [INFO]   Duration       : 121.4 seconds
+2026-02-13 14:07:16,762 [INFO]   Categories     : 9
+2026-02-13 14:07:16,762 [INFO]   Pages scanned  : 9
+2026-02-13 14:07:16,762 [INFO]   New downloaded : 0
+2026-02-13 14:07:16,763 [INFO]   Skipped        : 145
+2026-02-13 14:07:16,763 [INFO]   Failed         : 0
+2026-02-13 14:07:16,763 [INFO] ======================================================================
+2026-02-13 14:07:16,763 [INFO] No new items found – no email notifications sent.

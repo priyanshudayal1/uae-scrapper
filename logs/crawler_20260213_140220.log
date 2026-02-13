@@ -1,0 +1,125 @@
+2026-02-13 14:02:20,629 [INFO] Running in Single-Target Mode. Report will be sent ONLY to: divyanshukaintura789@gmail.com
+2026-02-13 14:02:20,646 [INFO] Loaded 4927 processed URLs from scraper_state.json
+2026-02-13 14:02:20,908 [INFO] ======================================================================
+2026-02-13 14:02:20,908 [INFO] UAE DIFC Courts Daily Crawler – Started at 2026-02-13T14:02:20.908043
+2026-02-13 14:02:20,908 [INFO] Dry-run: False
+2026-02-13 14:02:20,909 [INFO] ======================================================================
+2026-02-13 14:02:21,492 [INFO] Browser session started.
+2026-02-13 14:02:21,493 [INFO] Fetching categories from https://www.difccourts.ae/rules-decisions/judgments-orders
+2026-02-13 14:02:29,353 [INFO]   Category: Small Claims Tribunal
+2026-02-13 14:02:29,363 [INFO]   Category: Court of First Instance
+2026-02-13 14:02:29,377 [INFO]   Category: Court of Appeal
+2026-02-13 14:02:29,387 [INFO]   Category: Arbitration
+2026-02-13 14:02:29,414 [INFO]   Category: Enforcement
+2026-02-13 14:02:29,435 [INFO]   Category: Technology and Construction Division
+2026-02-13 14:02:29,455 [INFO]   Category: Joint Judicial Committee
+2026-02-13 14:02:29,477 [INFO]   Category: Court Administrative Orders
+2026-02-13 14:02:29,496 [INFO]   Category: Digital Economy Court
+2026-02-13 14:02:29,496 [INFO] Found 9 categories to crawl.
+2026-02-13 14:02:29,497 [INFO] 
+>>> Category 1/9
+2026-02-13 14:02:29,497 [INFO] ============================================================
+2026-02-13 14:02:29,497 [INFO] Crawling category: Small Claims Tribunal
+2026-02-13 14:02:29,498 [INFO] ============================================================
+2026-02-13 14:02:31,979 [INFO]   Total pages: 63
+2026-02-13 14:02:31,979 [INFO]   Listing page 1: https://www.difccourts.ae/rules-decisions/judgments-orders/small-claims-tribunal
+2026-02-13 14:02:38,928 [INFO]     Found 12 items (layout=standard)
+2026-02-13 14:02:38,928 [INFO]   [NEW] [1/12] OKPARA V ORALEE [2025] DIFC SCT 514
+2026-02-13 14:02:45,071 [INFO] Uploaded to S3: s3://uae-judgements/C:/Users/Priyanshu Dayal/Desktop/UAE scrapper/judgments/Okpara v Oralee [2025] DIFC SCT 514.pdf
+2026-02-13 14:02:45,073 [DEBUG] Deleted local file: C:\Users\Priyanshu Dayal\Desktop\UAE scrapper\judgments\Okpara v Oralee [2025] DIFC SCT 514.pdf
+2026-02-13 14:02:46,076 [INFO]   Listing page 2: https://www.difccourts.ae/rules-decisions/judgments-orders/small-claims-tribunal?ccm_paging_p=2&ccm_order_by=ak_date&ccm_order_by_direction=desc
+2026-02-13 14:02:52,902 [INFO]     Found 12 items (layout=standard)
+2026-02-13 14:02:52,902 [INFO]   All 12 items on page 2 already processed – stopping category scan.
+2026-02-13 14:02:52,902 [INFO] Category 'Small Claims Tribunal' done.
+2026-02-13 14:02:52,902 [INFO] 
+>>> Category 2/9
+2026-02-13 14:02:52,902 [INFO] ============================================================
+2026-02-13 14:02:52,903 [INFO] Crawling category: Court of First Instance
+2026-02-13 14:02:52,903 [INFO] ============================================================
+2026-02-13 14:02:57,042 [INFO]   Total pages: 296
+2026-02-13 14:02:57,042 [INFO]   Listing page 1: https://www.difccourts.ae/rules-decisions/judgments-orders/court-first-instance
+2026-02-13 14:03:05,466 [INFO]     Found 12 items (layout=standard)
+2026-02-13 14:03:05,467 [INFO]   All 12 items on page 1 already processed – stopping category scan.
+2026-02-13 14:03:05,467 [INFO] Category 'Court of First Instance' done.
+2026-02-13 14:03:05,467 [INFO] 
+>>> Category 3/9
+2026-02-13 14:03:05,468 [INFO] ============================================================
+2026-02-13 14:03:05,468 [INFO] Crawling category: Court of Appeal
+2026-02-13 14:03:05,468 [INFO] ============================================================
+2026-02-13 14:03:07,615 [INFO]   Total pages: 20
+2026-02-13 14:03:07,616 [INFO]   Listing page 1: https://www.difccourts.ae/rules-decisions/judgments-orders/court-appeal
+2026-02-13 14:03:14,134 [INFO]     Found 12 items (layout=standard)
+2026-02-13 14:03:14,135 [INFO]   All 12 items on page 1 already processed – stopping category scan.
+2026-02-13 14:03:14,135 [INFO] Category 'Court of Appeal' done.
+2026-02-13 14:03:14,136 [INFO] 
+>>> Category 4/9
+2026-02-13 14:03:14,136 [INFO] ============================================================
+2026-02-13 14:03:14,136 [INFO] Crawling category: Arbitration
+2026-02-13 14:03:14,136 [INFO] ============================================================
+2026-02-13 14:03:16,174 [INFO]   Total pages: 10
+2026-02-13 14:03:16,175 [INFO]   Listing page 1: https://www.difccourts.ae/rules-decisions/judgments-orders/arbitration
+2026-02-13 14:03:22,730 [INFO]     Found 12 items (layout=standard)
+2026-02-13 14:03:22,731 [INFO]   All 12 items on page 1 already processed – stopping category scan.
+2026-02-13 14:03:22,731 [INFO] Category 'Arbitration' done.
+2026-02-13 14:03:22,731 [INFO] 
+>>> Category 5/9
+2026-02-13 14:03:22,732 [INFO] ============================================================
+2026-02-13 14:03:22,732 [INFO] Crawling category: Enforcement
+2026-02-13 14:03:22,732 [INFO] ============================================================
+2026-02-13 14:03:24,758 [INFO]   Total pages: 5
+2026-02-13 14:03:24,758 [INFO]   Listing page 1: https://www.difccourts.ae/rules-decisions/judgments-orders/enforcement
+2026-02-13 14:03:31,174 [INFO]     Found 12 items (layout=standard)
+2026-02-13 14:03:31,175 [INFO]   All 12 items on page 1 already processed – stopping category scan.
+2026-02-13 14:03:31,175 [INFO] Category 'Enforcement' done.
+2026-02-13 14:03:31,175 [INFO] 
+>>> Category 6/9
+2026-02-13 14:03:31,175 [INFO] ============================================================
+2026-02-13 14:03:31,176 [INFO] Crawling category: Technology and Construction Division
+2026-02-13 14:03:31,176 [INFO] ============================================================
+2026-02-13 14:03:33,221 [INFO]   Total pages: 12
+2026-02-13 14:03:33,221 [INFO]   Listing page 1: https://www.difccourts.ae/rules-decisions/judgments-orders/technology-and-construction-division
+2026-02-13 14:03:41,061 [INFO]     Found 12 items (layout=standard)
+2026-02-13 14:03:41,062 [INFO]   All 12 items on page 1 already processed – stopping category scan.
+2026-02-13 14:03:41,062 [INFO] Category 'Technology and Construction Division' done.
+2026-02-13 14:03:41,062 [INFO] 
+>>> Category 7/9
+2026-02-13 14:03:41,062 [INFO] ============================================================
+2026-02-13 14:03:41,063 [INFO] Crawling category: Joint Judicial Committee
+2026-02-13 14:03:41,063 [INFO] ============================================================
+2026-02-13 14:03:42,921 [INFO]   Total pages: 1
+2026-02-13 14:03:42,921 [INFO]   Listing page 1: https://www.difccourts.ae/rules-decisions/judgments-orders/joint-judicial-committee
+2026-02-13 14:04:20,444 [INFO]     Found 57 items (layout=grid)
+2026-02-13 14:04:20,446 [INFO]   All 57 items on page 1 already processed – stopping category scan.
+2026-02-13 14:04:20,447 [INFO] Category 'Joint Judicial Committee' done.
+2026-02-13 14:04:20,448 [INFO] 
+>>> Category 8/9
+2026-02-13 14:04:20,449 [INFO] ============================================================
+2026-02-13 14:04:20,450 [INFO] Crawling category: Court Administrative Orders
+2026-02-13 14:04:20,450 [INFO] ============================================================
+2026-02-13 14:04:22,465 [INFO]   Total pages: 3
+2026-02-13 14:04:22,466 [INFO]   Listing page 1: https://www.difccourts.ae/rules-decisions/judgments-orders/court-administrative-orders
+2026-02-13 14:04:28,790 [INFO]     Found 12 items (layout=standard)
+2026-02-13 14:04:28,790 [INFO]   All 12 items on page 1 already processed – stopping category scan.
+2026-02-13 14:04:28,790 [INFO] Category 'Court Administrative Orders' done.
+2026-02-13 14:04:28,791 [INFO] 
+>>> Category 9/9
+2026-02-13 14:04:28,791 [INFO] ============================================================
+2026-02-13 14:04:28,791 [INFO] Crawling category: Digital Economy Court
+2026-02-13 14:04:28,791 [INFO] ============================================================
+2026-02-13 14:04:32,489 [INFO]   Total pages: 1
+2026-02-13 14:04:32,489 [INFO]   Listing page 1: https://www.difccourts.ae/rules-decisions/judgments-orders/digital-economy-court
+2026-02-13 14:04:37,719 [INFO]     Found 6 items (layout=standard)
+2026-02-13 14:04:37,719 [INFO]   All 6 items on page 1 already processed – stopping category scan.
+2026-02-13 14:04:37,719 [INFO] Category 'Digital Economy Court' done.
+2026-02-13 14:04:39,646 [INFO] Synced crawler state -> scraper_state.json (4928 total URLs)
+2026-02-13 14:04:39,648 [INFO] ======================================================================
+2026-02-13 14:04:39,648 [INFO] CRAWL COMPLETE
+2026-02-13 14:04:39,648 [INFO]   Duration       : 138.7 seconds
+2026-02-13 14:04:39,648 [INFO]   Categories     : 9
+2026-02-13 14:04:39,649 [INFO]   Pages scanned  : 10
+2026-02-13 14:04:39,649 [INFO]   New downloaded : 1
+2026-02-13 14:04:39,649 [INFO]   Skipped        : 158
+2026-02-13 14:04:39,649 [INFO]   Failed         : 0
+2026-02-13 14:04:39,649 [INFO] ======================================================================
+2026-02-13 14:04:39,649 [INFO] Sending report ONLY to specific email: divyanshukaintura789@gmail.com
+2026-02-13 14:04:43,743 [INFO] Email notification sent to divyanshukaintura789@gmail.com
