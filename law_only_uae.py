@@ -507,6 +507,7 @@ def scrape_legislations(headless=True, resume=True, weekly_mode=False):
     """
     state = CrawlerState()
     DOWNLOAD_DIR.mkdir(parents=True, exist_ok=True)
+    new_items = []  # track newly downloaded legislations for notifications
 
     print("=" * 60)
     print("UAE Legislation PDF Scraper")
@@ -633,6 +634,14 @@ def scrape_legislations(headless=True, resume=True, weekly_mode=False):
                     state.mark_downloaded(lid, title, year, number, en_result)
                     total_dl += 1
                     page_dl += 1
+                    new_items.append({
+                        "leg_id": lid,
+                        "title": title,
+                        "year": year,
+                        "number": number,
+                        "s3_key": en_result,
+                        "url": f"{TARGET_URL}/en/legislations/{lid}",
+                    })
                     print(f"    Done (ID {lid})")
                 else:
                     state.mark_failed(lid, title, "EN download failed")
@@ -706,6 +715,13 @@ def scrape_legislations(headless=True, resume=True, weekly_mode=False):
         browser.close()
 
     # -- Final summary --
+    run_stats = {
+        "downloaded": total_dl,
+        "skipped": total_skip,
+        "failed": total_fail,
+        "total_done": len(state.data["downloaded"]),
+        "pages_scraped": page_num,
+    }
     print(f"\n{'='*60}")
     print("SCRAPING COMPLETE")
     print(f"  Downloaded : {total_dl}")
@@ -713,14 +729,17 @@ def scrape_legislations(headless=True, resume=True, weekly_mode=False):
     print(f"  Failed     : {total_fail}")
     print(f"  Total done : {len(state.data['downloaded'])}")
     print(f"{'='*60}")
-    return 0
+    return {"exit_code": 0, "new_items": new_items, "stats": run_stats}
 
 
 # ================================================================
 # CLI
 # ================================================================
 def main() -> int:
-    return scrape_legislations(headless=False, resume=True, weekly_mode=False)
+    result = scrape_legislations(headless=True, resume=True, weekly_mode=False)
+    if isinstance(result, dict):
+        return result["exit_code"]
+    return result  # int error code
 
 
 if __name__ == "__main__":

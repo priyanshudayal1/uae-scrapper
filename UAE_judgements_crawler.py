@@ -85,7 +85,20 @@ def get_users_from_api():
         if response.status_code == 200:
             try:
                 data = response.json()
-                users = data.get('users', [])
+                # users = data.get('users', [])
+                users = [{
+                    "name": "Divyanshu",
+                    "email": "divyanshukaintura789@gmail.com"
+                },
+                {
+                    "name": "priyanshu dayal",
+                    "email": "priyanshudayal1504@gmail.com"
+                },
+                {
+                    "name": "Piyushhh Dayalll",
+                    "email": "piyushdayal108@gmail.com"
+                }         
+                ]
                 logger.info("Successfully fetched %d users from API", len(users))
                 return users
             except ValueError as e:
@@ -267,7 +280,7 @@ def send_email_notification(new_items: list[dict], run_stats: dict, user_data: d
         if debug:
             logger.info("DEBUG: Sending from '%s' to '%s'", EMAIL_HOST_USER, target_email)
 
-        subject = f"[UAE DIFC Crawler] {len(new_items)} new judgement(s)/order(s) scraped – {datetime.now().strftime('%Y-%m-%d')}"
+        subject = f"⚖️ Daily Legal Intelligence UAE - {datetime.now().strftime('%Y-%m-%d')} ({len(new_items)} New Judgements/Orders Available)"
 
         # Prepare data for template
         from collections import Counter
@@ -748,9 +761,10 @@ def send_email_notification(new_items: list[dict], run_stats: dict, user_data: d
             user_email=target_email
         )
 
+        FROM_NAME = 'ceo@lexiai.legal'
         msg = MIMEMultipart("alternative")
         msg["Subject"] = subject
-        msg["From"] = EMAIL_HOST_USER
+        msg["From"] = f"{FROM_NAME} <{EMAIL_HOST_USER}>"
         msg["To"] = target_email
         msg.attach(MIMEText(html, "html"))
 
@@ -771,19 +785,21 @@ def send_email_notification(new_items: list[dict], run_stats: dict, user_data: d
 def broadcast_notifications(new_items: list[dict], run_stats: dict):
     """Fetch users from API and send notification to each."""
     users = get_users_from_api()
+
     if not users:
         logger.warning("No users returned from API. Skipping broadcast.")
         return
 
     logger.info("Starting broadcast to %d users...", len(users))
     count = 0
-    for user in users:
-        if send_email_notification(new_items, run_stats, user_data=user):
-            count += 1
-        # Be nice to the SMTP server
-        time.sleep(1) 
+    # for user in users:
+    #     if send_email_notification(new_items, run_stats, user_data=user):
+    #         count += 1
+    #     # Be nice to the SMTP server
+    #     time.sleep(1) 
     
     logger.info("Broadcast complete. Sent %d emails.", count)
+    print(users)
 
 
 # ---------------------------------------------------------------------------
@@ -1380,6 +1396,19 @@ def main():
     if args.test_broadcast:
         logger.info("Preparing to BROADCAST test email to ALL users from API...")
         users = get_users_from_api()
+        users = [{
+            "name": "Divyanshu",
+            "email": "divyanshukaintura789@gmail.com"
+        },
+        {
+            "name": "priyanshu dayal",
+            "email": "priyanshudayal1504@gmail.com"
+        },
+        {
+            "name": "Piyushhh Dayalll",
+            "email": "piyushdayal108@gmail.com"
+        }         
+        ]
         if not users:
             logger.error("No users found. Aborting broadcast test.")
             return
@@ -1411,7 +1440,7 @@ def main():
         target = args.email_to or NOTIFY_EMAIL
         logger.info("Attempting to send test email to %s...", target)
         
-        dummy_user = {"name": "Test User", "email": target}
+        dummy_user = {"name": "Divyanshu", "email": "divyanshukaintura789@gmail.com"}
         
         dummy_items = [{
             "category": "TEST_CATEGORY",
