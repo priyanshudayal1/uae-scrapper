@@ -32,7 +32,7 @@ load_dotenv()
 TARGET_URL = "https://uaelegislation.gov.ae"
 LEGISLATIONS_URL = f"{TARGET_URL}/en/legislations"
 DOWNLOAD_DIR = Path("downloads/legislations")
-STATE_FILE = "crawler_state.json"
+STATE_FILE = "law_crawler_state.json"
 S3_BUCKET = "uae-bareacts"
 
 
